@@ -1,9 +1,9 @@
-window.addEventListener('scroll',onScroll)
+window.addEventListener('scroll', onScroll)
 
 onScroll();
 function onScroll() {
     showNavOnScroll()
-showBackToTopButtonScroll()
+    showBackToTopButtonScroll()
 }
 
 function openMenu() {
@@ -35,14 +35,13 @@ ScrollReveal({
     distance: '30px',
     duration: 700
 }).reveal(`
-#home, 
-nav,
-#home img, 
-#home .stats,
-#services,
-#services header,
-#services .card,
-$about,
-#about header,
-#about .content,
+    #home,
+    nav
+    #home.stats
+    #services,
+    #services header,
+    #services .card,
+    #about,
+    #about header
+    #about .content
 `);
